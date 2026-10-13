@@ -2,14 +2,56 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" 
+        content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style-1.css">
         <title>My first code</title>
     </head>
 
     <body>
-        <header>
-            
-        </header>
+        <main>
+            <div>
+                <img class="background" src="image/bg.jpg" alt="background">
+            </div>
+            <form>
+                <div>
+                    <h2>Get iintoo it today</h2>
+                    <p class="h2p">There is no charge or obligation upon registration.</p>
 
+                    <div class="regbox">
+                        <div id="facebook">
+                            <a href="https://www.facebook.com">Register with Facebook</a>
+                        </div>
+                        <div id="Linkedin">
+                            <a href="https://kr.linkedin.com">Register with Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <span class="or">OR</span>
+                
+                <div class="regbox2">
+                        <label for="email"></label>
+                        <input type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        required>
+                    
+                        <label for="phone"></label>
+                        <input type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Phone"
+                        required>
+                </div>
+
+                <div>
+                    <h3>What type of investor are you?</h3>
+                    <p class="h3p">Select the type of investor you are below.</p>
+                    
+                </div>
+            </form>
+        </main>
     </body>
 </html>
