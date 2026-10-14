@@ -3,55 +3,95 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" 
-        content="width-device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style-1.css">
         <title>My first code</title>
     </head>
 
     <body>
         <main>
-            <div>
-                <img class="background" src="image/bg.jpg" alt="background">
-            </div>
-            <form>
+        <div class="img-con">
+            <img class="background" src="image/bg.jpg" alt="background">
+            <img class="logo" src="image/logo.svg" alt="logo">
+        </div>
+            
+            <div class="mainbox">
                 <div>
                     <h2>Get iintoo it today</h2>
                     <p class="h2p">There is no charge or obligation upon registration.</p>
 
                     <div class="regbox">
-                        <div id="facebook">
-                            <a href="https://www.facebook.com">Register with Facebook</a>
-                        </div>
-                        <div id="Linkedin">
-                            <a href="https://kr.linkedin.com">Register with Linkedin</a>
-                        </div>
+                        <button type="button">
+                            <img src="image/facebook.svg" alt="facebook-logo" class="img-facebook">
+                            Register with Facebook
+                        </button>
+                        <button type="button">
+                            <img src="image/linkedin.svg" alt="linkedin-logo" class="img-linkedin">
+                            Register with Linkedin
+                        </button>
                     </div>
                 </div>
-                
                 <span class="or">OR</span>
-                
-                <div class="regbox2">
-                        <label for="email"></label>
+                <form>
+                    <div class="regbox2">
+                        <label for="email">Email</label>
                         <input type="email"
                         id="email"
                         name="email"
-                        placeholder="Email"
                         required>
-                    
-                        <label for="phone"></label>
+                        
+                        <label for="phone">Phone</label>
                         <input type="tel"
                         id="phone"
                         name="phone"
-                        placeholder="Phone"
                         required>
-                </div>
+                    </div>
 
-                <div>
-                    <h3>What type of investor are you?</h3>
-                    <p class="h3p">Select the type of investor you are below.</p>
+                    <div>
+                        <h3>What type of investor are you?</h3>
+                        <p class="h3p">Select the type of investor you are below.</p>
+                        
+                        <div class="radiobox">
+                            <input type="radio"
+                            id="individual"
+                            name="investor-type"
+                            value="individual">
+                            <label for="individual">Individual</label>
+
+                            <input type="radio"
+                            id="business"
+                            name="investor-type"
+                            value="business">
+                            <label for="business">Business</label>
+
+                            <input type="radio"
+                            id="ira"
+                            name="investor-type"
+                            value="ira">
+                            <label for="ira">IRA</label>
+
+                            <input type="radio"
+                            id="trust"
+                            name="investor-type"
+                            value="trust">
+                            <label for="trust">Trust</label>
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                        id="terms-agree"
+                        name="terms-agree"
+                        value="agree">
+                        <label for="terms-agree">I agree to the terms and receiving notifications from iintoo</label>
+                        <a href="#full-terms">View full terms</a>
+                    </div>
                     
-                </div>
-            </form>
+                    <div>
+                        <button type="submit">Create Account</button>
+                    </div>
+                </form>
+            </div>
         </main>
     </body>
 </html>
