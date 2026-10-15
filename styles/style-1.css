@@ -2,16 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #2A4A5C;
+}
+h2, h3 {
+    color: #7B8A92;
+}
+.h2p, .h3p {
+    color: #96A5B1;
 }
 
 main {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     min-height: 100vh;
+    background-color: #EFF6FF;
 }
-
 .img-con {
     position: relative;
+    width: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .logo {
     position: absolute;
@@ -19,12 +35,18 @@ main {
     left: 35px;
     width: 120px;
 }
-
 .mainbox {
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.content {
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+}
 .regbox button img {
     width: 20px;
     height: 20px;
