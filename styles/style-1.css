@@ -41,26 +41,6 @@ h3 {
 .h3p {
     font-size: 12px;
 }
-.summary-i {
-    user-select: none;
-    border: 1px solid #AFAFAF;
-    border-radius: 20px;
-    width: 12px;
-    height: 12px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 10px;
-    color: #AFAFAF;
-}
-.radiobox summary {
-    display: flex;
-    width: 25px;
-    height: 25px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
 body {
     background-color: #EFF6FF;
@@ -74,6 +54,7 @@ main {
     display: flex;
     max-width: 1400px;
     max-height: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .img-con {
     width: 52%;
@@ -163,7 +144,6 @@ main {
 }
 .what-gap {
     margin-top: 40px;
-    margin-bottom: 120px;
 }
 .radiobox {
     margin-top: 35px;
@@ -193,6 +173,26 @@ main {
     height: 16px;
 }
 
+.summary-i {
+    user-select: none;
+    border: 1px solid #AFAFAF;
+    border-radius: 20px;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    color: #AFAFAF;
+}
+.radiobox summary {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .tooltip {
     position: absolute;
     background-color: #FFFFFF;
@@ -203,6 +203,9 @@ main {
     top: 40px;
     left: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.checkbox {
+    margin-top: 120px;
 }
 .checkbox input {
     width: 11px;
