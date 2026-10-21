@@ -12,12 +12,7 @@ h2, h3 {
 .h2p, .h3p {
     color: #96A5B1;
 }
-.get-iintoo, .what-type {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 .field:focus-within, .field:hover {
     border-left-color: #3698FB;
 }
@@ -80,6 +75,12 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
+}
+.get-iintoo, .what-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .content {
     max-width: 450px;
@@ -149,13 +150,11 @@ main {
     margin-top: 35px;
     font-size: 14px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     min-width: 0;
-    position: relative;
 }
 .radio1, .radio2, .radio3, .radio4 {
     display: flex;
-    align-items: center;
     gap: 10px;
 }
 .radiobox input {
@@ -172,7 +171,6 @@ main {
     width: 16px;
     height: 16px;
 }
-
 .summary-i {
     user-select: none;
     border: 1px solid #AFAFAF;
@@ -189,23 +187,46 @@ main {
     display: flex;
     width: 25px;
     height: 25px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
 }
 .tooltip {
-    position: absolute;
+    display: none;
     background-color: #FFFFFF;
     width: 230px;
     padding: 10px;
     border-radius: 5px;
     font-size: 12px;
-    top: 40px;
-    left: 0;
+    margin-top: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+.what-gap:has(.radio1 details[open]) .tooltip-individual {
+    display: block;
+}
+.what-gap:has(.radio2 details[open]) .tooltip-business {
+    display: block;
+}
+.what-gap:has(.radio3 details[open]) .tooltip-ira {
+    display: block;
+}
+.what-gap:has(.radio4 details[open]) .tooltip-trust {
+    display: block;
+}
+.what-gap:has(.radio1 details[close]) .tooltip-individual {
+    display: none;
+}
+.what-gap:has(.radio2 details[close]) .tooltip-business {
+    display: none;
+}
+.what-gap:has(.radio3 details[close]) .tooltip-ira {
+    display: none;
+}
+.what-gap:has(.radio4 details[close]) .tooltip-trust {
+    display: none;
+}
 .checkbox {
-    margin-top: 120px;
+    margin-top: 30px;
 }
 .checkbox input {
     width: 11px;
